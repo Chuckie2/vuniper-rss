@@ -40,6 +40,6 @@ for link in links:
     entry = fg.add_entry()
     entry.title(title)
     entry.link(href=href)
-    entry.published(datetime.utcnow())
+    entry.published(datetime.now(timezone.utc))
 
 fg.rss_file("rss.xml")
